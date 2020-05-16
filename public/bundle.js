@@ -8228,7 +8228,7 @@ navigator.mediaDevices.getUserMedia({video: true, audio: true})
         let video = document.createElement('video');
         video.id  = 'peerVideo';
         video.srcObject = stream;
-        video.class = 'embed-response-item';
+        video.setAttribute('class', 'embed-responsive-item')
         document.querySelector('#peerDiv').appendChild(video);
         video.play()
     }
